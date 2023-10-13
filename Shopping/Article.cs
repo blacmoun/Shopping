@@ -11,7 +11,9 @@
         #region public methods
         public Article(int id, string description, float price)
         {
-            throw new NotImplementedException();
+            _id = id;
+            _description = description;
+            _price = price;
         }
 
 
@@ -19,7 +21,7 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return _id;
             }
         }
 
@@ -27,7 +29,7 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return _description;
             }
             set
             {
@@ -39,7 +41,7 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return _price;
             }
         }
         #endregion public methods
