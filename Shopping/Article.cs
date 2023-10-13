@@ -29,6 +29,10 @@
             {
                 throw new NotImplementedException();
             }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public float Price
@@ -39,5 +43,10 @@
             }
         }
         #endregion public methods
+
+        public class ArticleException : Exception { }
+        public class TooShortDescriptionException : ArticleException { }
+        public class SpecialCharInDescriptionException : ArticleException { }
+        public class TooLongDescriptionException : ArticleException { }
     }
 }
